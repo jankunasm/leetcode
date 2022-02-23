@@ -73,7 +73,7 @@ print(isPalindrome(13345))
 print(isPalindrome(4556554))
 
 
-# Fastest Solution... Splits the integer and checks if the half in a palindrome.
+# Fastest Solution... Splits the integer and checks if the half is a palindrome.
 
 def isPalindrome(x):
 	if x < 0 or (x > 0 and x % 10 == 0):   # if x is negative, return False. if x is positive and last digit is 0, that also cannot form a palindrome, return False.

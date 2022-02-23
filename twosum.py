@@ -81,7 +81,7 @@ class Solution:
     
     
 # Leetcode sends test cases as an object for their efficiency... Example of passing an object below
-# However neeeds self passed through function to work fro class solution
+# However neeeds self passed through function to work for class solution
 
 # solution = Solution()
 
