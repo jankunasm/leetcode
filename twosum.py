@@ -45,6 +45,24 @@ class Solution:
     print(twoSum([3,3], 6))
 
 
+# Slightly different solution no enumerate.
+
+class Solution:
+    def twoSum(num, target):
+        map = {}
+        for i in range(len(num)):
+            if num[i] not in map:
+                map[target - num[i]] = i + 1
+            else:
+                return map[num[i]], i + 1
+
+        return -1, -1
+    
+    print(twoSum([3, 2, 4], 6))
+    print(twoSum([2,7,11,15], 26))
+    print(twoSum([3,3], 6))
+
+
 # Nested For Loop Solution.
 
 class Solution:
@@ -60,6 +78,7 @@ class Solution:
     print(twoSum([3, 2, 4], 6))
     print(twoSum([2,7,11,15], 26))
     print(twoSum([3,3], 6))
+    
     
 # Leetcode sends test cases as an object for their efficiency... Example of passing an object below
 # However neeeds self passed through function to work fro class solution
